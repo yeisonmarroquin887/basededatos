@@ -79,7 +79,7 @@ const Form = ({ userregister, updateinfo, Update, setupdateinfo, setclose, close
 
         <div className="form_item">
           <label className="form_label" htmlFor="birthday">
-            Birthdat
+            Birthday
           </label>
 
           <input

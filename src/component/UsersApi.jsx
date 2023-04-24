@@ -1,8 +1,9 @@
 import React from 'react'
 import './Styles/UsersApi.css'
-const UsersApi = ( {people, DeleteRegister, setupdateinfo} ) => {
+const UsersApi = ( {people, DeleteRegister, setupdateinfo, setclose} ) => {
   const handelupdate = () => {
     setupdateinfo(people)
+    setclose(false)
   }
   return (
     <div className='users'>

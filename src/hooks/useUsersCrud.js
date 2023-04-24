@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 
 const useUsersCrud = () => {
   const [users, setusers] = useState() 
-  const url = `http://users-crud.academlo.tech/users/`
+  const url = `https://users-crud.academlo.tech/users/`
      //para consumir la Api
   const getAllApi = () => {
     axios.get(url)
