@@ -42,7 +42,6 @@ const handelregisternew  = () => {
            people={peolpe}
            DeleteRegister={DeleteRegister}
            setupdateinfo={setupdateinfo}
-           handelregisternew={handelregisternew}
            />
         ))
       }
