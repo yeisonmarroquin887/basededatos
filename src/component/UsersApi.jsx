@@ -1,6 +1,6 @@
 import React from 'react'
 import './Styles/UsersApi.css'
-const UsersApi = ( {people, DeleteRegister,  setupdateinfo} ) => {
+const UsersApi = ( {people, DeleteRegister, setupdateinfo} ) => {
   const handelupdate = () => {
     setupdateinfo(people)
   }
