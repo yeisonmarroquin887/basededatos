@@ -3,7 +3,7 @@ import './Styles/UsersApi.css'
 const UsersApi = ( {people, DeleteRegister,  setupdateinfo,  handelregisternew} ) => {
   const handelupdate = () => {
     setupdateinfo(people)
-    handelregisternew()
+    handelregisternew(false)
   }
   return (
     <div className='users'>
