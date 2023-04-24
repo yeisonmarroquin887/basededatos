@@ -1,0 +1,55 @@
+.users{
+    border: 0.05em solid #aaa7;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 0.4em;
+    padding: 1.5em 1em;
+}
+.users_name{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+.users_ul{
+    display: grid;
+    gap: 0.8em;
+    margin-bottom: 1em;
+}
+.users_item{
+    display: flex;
+    flex-direction: column;
+}
+.users_label{
+    font-size: 0.7rem;
+    color: #aaa;
+    text-transform: uppercase;
+    position: relative;
+    left: 0.5em;
+}
+.users_value{
+    font-size: 0.8rem;
+}
+.users_footer{
+    display: flex;
+    justify-content: end;
+    gap: 0.7em;
+}
+.users_button{
+   width: 2.5em;
+   aspect-ratio: 1;
+   border-radius: 0.4em;
+   cursor: pointer;
+   transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.users_button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 0.5em #0005;
+}
+.user_delete{
+    color: white;
+    background-color: #d93f3f;
+}
+.user_update{
+    color: #aaa;
+    border: 0.05em solid currentColor;
+}

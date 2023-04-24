@@ -1,0 +1,23 @@
+.App{
+    padding: 2em 1.5em;
+}
+.app_header{
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+.app_tittle{
+    font-weight: 600;
+}
+.app_btn{
+    cursor: pointer;
+    background-color: #555A88;
+    color: white;
+    padding: 0.5em 1.5em;
+}
+.app_users{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
