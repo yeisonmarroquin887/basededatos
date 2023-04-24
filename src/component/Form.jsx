@@ -21,6 +21,7 @@ const Form = ({ userregister, updateinfo, Update, setupdateinfo, setclose, close
   }
 
   return (
+    <article>
     <div className={`container ${close && 'close'}`}>
       <form className="form" onSubmit={handleSubmit(submit)}>
         <h3 className="form_tittle">{updateinfo ? "Update User Information": "Create New user"}</h3>
@@ -93,6 +94,7 @@ const Form = ({ userregister, updateinfo, Update, setupdateinfo, setclose, close
         <button onClick={handelcloseexit} className="form_btn">{updateinfo ? "update" : "create"}</button>
       </form>
     </div>
+    </article>
   );
 };
 

@@ -8,6 +8,7 @@ const UsersApi = ( {people, DeleteRegister, setupdateinfo, setclose} ) => {
   return (
     <div className='users'>
       <h2 className='users_name'>{people.first_name} {people.last_name}</h2>
+      <hr className='hr'/>
     <ul className='users_ul'>
       <li className='users_item'>
         <span className='users_label'>Email</span>
@@ -18,6 +19,7 @@ const UsersApi = ( {people, DeleteRegister, setupdateinfo, setclose} ) => {
         <span className='users_value'>{people.birthday}</span>
         </li>
     </ul>
+    <hr className='hr'/>
     <footer className='users_footer'>
     <button className='users_button user_delete' onClick={() => DeleteRegister(people.id)}>
      el

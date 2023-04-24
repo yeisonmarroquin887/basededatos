@@ -23,10 +23,12 @@ const handelregisternew  = () => {
 }
   return (
     <div className="App">
+    
       <header className="app_header">
       <h1 className="app_tittle">Users</h1>
       <button onClick={handelregisternew} className="app_btn">New User</button>
       </header>
+      
       <Form userregister={userregister}
       updateinfo={updateinfo}
       Update={Update}
