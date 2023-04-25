@@ -43,6 +43,7 @@
     background-color: #555a88fb;
     border-radius: 50%;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .form_exit:hover{
     filter: brightness(1.4);

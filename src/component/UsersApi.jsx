@@ -7,7 +7,7 @@ const UsersApi = ( {people, DeleteRegister, setupdateinfo, setclose} ) => {
   }
   return (
     <div className='users'>
-      <h2 className='users_name'>{people.first_name} {people.last_name}</h2>
+      <h2 className='users_name'><b>{people.first_name} {people.last_name}</b></h2>
       <hr className='hr'/>
     <ul className='users_ul'>
       <li className='users_item'>
