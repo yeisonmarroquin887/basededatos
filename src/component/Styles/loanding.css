@@ -1,0 +1,19 @@
+img{
+    width: 100%;
+}
+.loading{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 700px) {
+    img{
+        width: 50%;
+    }
+    .loading{
+        background-color: white;
+        height: 100vh;
+    }
+}
