@@ -1,7 +1,11 @@
 .App{
-    padding: 2em 1.5em;
+    padding: 0em;
 }
-
+.header{
+    background-color: antiquewhite;
+    height: 5em;
+    margin-bottom: 1em;
+}
 .app_header{
     display: flex;
     margin-bottom: 1em;
@@ -9,10 +13,17 @@
     max-width: 800px;
     margin: auto;
     margin-bottom: 3em;
+    padding: 1em 1.5em;
 }
 .app_tittle{
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: rgb(179, 33, 33);
+    text-shadow: 3px 3px  #e79aa86b;
 }
+
 .app_btn{
     cursor: pointer;
     background-color: #555A88;
@@ -21,6 +32,9 @@
     width: 10em;
     border-radius: 0.4em;
     transition: filter 200ms ease, transform 200ms ease;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .app_btn:hover{
     filter: brightness(1.2);
@@ -31,5 +45,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5em;
+    padding: 2em 1.5em;
 }
 
