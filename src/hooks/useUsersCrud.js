@@ -5,8 +5,7 @@ import { useState, useEffect } from "react"
 
 const useUsersCrud = () => {
   const [users, setusers] = useState() 
-  const url = `https://users-crud.academlo.tech/users/`
-     //para consumir la Api
+  const url = `https://users-crud-test-wdrm.onrender.com/api/v1/user/`
   const getAllApi = () => {
     axios.get(url)
     .then(res => setusers(res.data))
@@ -16,14 +15,14 @@ const useUsersCrud = () => {
     getAllApi()
   },[])
 
-  //para agregar registro en la Api
+  
   const userregister = (data) => {
       axios.post(url, data)
       .then(() => getAllApi())
       .catch(err => console.log(err))
     }
 
-    //para eliminar de la Api
+   
     const DeleteRegister = id => {
       const deleteRegister = `${url}${id}/`
       axios.delete(deleteRegister)
@@ -33,7 +32,7 @@ const useUsersCrud = () => {
     // aca utilizaremos el update para modificar la información del usuario
     const Update = (id, data) => {
      const urlUpdate = `${url}${id}/`
-     axios.patch(urlUpdate, data)
+     axios.put(urlUpdate, data)
      .then(() => getAllApi())
      .catch(err => console.log(err))
     }

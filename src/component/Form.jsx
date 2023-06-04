@@ -27,32 +27,6 @@ const Form = ({ userregister, updateinfo, Update, setupdateinfo, setclose, close
         <h3 className="form_tittle">{updateinfo ? "Update User Information": "Create New user"}</h3>
         <span onClick={handelcloseexit} className="form_exit">x</span>
         <div className="form_item">
-          <label className="form_label" htmlFor="email">
-            Email
-          </label>
-
-          <input
-            className="form_input"
-            {...register("email")}
-            type="email"
-            id="email"
-          />
-        </div>
-
-        <div className="form_item">
-          <label className="form_label" htmlFor="password">
-            Password
-          </label>
-
-          <input
-            className="form_input"
-            {...register("password")}
-            type="password"
-            id="password"
-          />
-        </div>
-
-        <div className="form_item">
           <label className="form_label" htmlFor="first_name">
             First Name
           </label>
@@ -60,7 +34,7 @@ const Form = ({ userregister, updateinfo, Update, setupdateinfo, setclose, close
           <input
             className="form_input"
             {...register("first_name")}
-            type="text"
+            type="first_name"
             id="first_name"
           />
         </div>
@@ -73,8 +47,34 @@ const Form = ({ userregister, updateinfo, Update, setupdateinfo, setclose, close
           <input
             className="form_input"
             {...register("last_name")}
-            type="text"
+            type="last_name"
             id="last_name"
+          />
+        </div>
+
+        <div className="form_item">
+          <label className="form_label" htmlFor="email">
+          Email
+          </label>
+
+          <input
+            className="form_input"
+            {...register("email")}
+            type="text"
+            id="email"
+          />
+        </div>
+
+        <div className="form_item">
+          <label className="form_label" htmlFor="password">
+          Password
+          </label>
+
+          <input
+            className="form_input"
+            {...register("password")}
+            type="text"
+            id="password"
           />
         </div>
 
