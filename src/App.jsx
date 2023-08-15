@@ -22,11 +22,17 @@ function App() {
 const handelregisternew  = () => {
   setclose(false)
 }
+const [Lodin, setLodin] = useState(false)
+useEffect(() => {
+  setTimeout(() => {
+    setLodin(true);
+  }, 1800);
+}, []);
   return (
     <div className="App">
 
       {
-        users
+        Lodin
         ? <article>
         <header className="header">
        <header className="app_header">
